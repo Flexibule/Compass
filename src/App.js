@@ -1,13 +1,22 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import  TripCard from './components/TripCard'
+import  Home from './containers/Home'
+
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <TripCard />
+        <Router>
+          <div>
+            <Route exact path='/' component={Home} />
+          </div>
+        </Router>
       </div>
     )
   }
