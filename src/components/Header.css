@@ -1,23 +1,56 @@
 .Header {
-  background-image: url('../assets/hawaii.jpg');
+  background-image: url('../assets/mountain.jpg');
+  opacity: 0.9;
   background-size: cover;
-  height: 80vh;
-  padding: 20em
+  height: 60vh;
 }
 
 .header-text {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 1.2);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 8rem;
+  padding-top: 25vh;
+}
+
+.subtitle-text {
+  margin-top: 2.3em;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
 }
 
 .header-button {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .button-text {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 1.8rem !important;
   font-weight: bold !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    height: 20vh;
+    padding: 0em;
+    margin-bottom: 1em;
+  }
+  .header-text {
+      text-align: center;
+      margin-top: 0;
+      font-size: 3rem;
+      padding-top: 8vh;
+  }
+
+  .subtitle-text {
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .header-button {
+    display: none;
+  }
 }

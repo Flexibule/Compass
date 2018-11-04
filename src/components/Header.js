@@ -9,6 +9,9 @@ class Header extends Component {
         <div className='header-text'>
           Compass
         </div>
+        <div className='subtitle-text'>
+          Point towards your next destination
+        </div>
         <div className='header-button'>
           <Button inverted className='button-text'>Explore Trips</Button>
         </div>

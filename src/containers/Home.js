@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid } from 'semantic-ui-react'
+import {Grid, Row, Col, Image} from 'react-bootstrap'
 import './Home.css'
 
 import Header from '../components/Header'
@@ -11,21 +11,31 @@ class Home extends Component {
     return (
       <div className="Home">
         <Header />
-        <CreateTrip />
-        {/* <div className='header-text-2'>Upcoming Trips </div>
-        <Grid columns = {3} className='upcoming-trips' padded>
-          <Grid.Row>
-            <Grid.Column>
-              <TripCard />
-            </Grid.Column>
-            <Grid.Column>
-              <TripCard />
-            </Grid.Column>
-            <Grid.Column>
-              <TripCard />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid> */}
+        <Grid fluid>
+          <Row>
+            <Col md={8} sm={12} mdOffset={2} smOffset={0}>
+              <CreateTrip />
+            </Col>
+          </Row>
+        </Grid>
+
+        <Grid fluid>
+          <Row>
+            <Col md={10} mdOffset={1}>
+              <Row>
+                <Col md={4} sm={12}>
+                  <TripCard />
+                </Col>
+                <Col md={4} sm={12}>
+                  <TripCard />
+                </Col>
+                <Col md={4} sm={12}>
+                  <TripCard />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Grid>
       </div>
     )
   }
