@@ -1,0 +1,12 @@
+.CreateTrip {
+  height: 20vh;
+  background-image: url('../assets/trees2.jpg');
+  background-size: cover;
+}
+
+.panel-header {
+  padding-top: 0.5em;
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}

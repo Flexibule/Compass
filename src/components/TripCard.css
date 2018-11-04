@@ -1,0 +1,12 @@
+.content {
+  text-align: left;
+}
+
+.header {
+  font-size: 2rem !important;
+}
+
+.settings {
+  text-align: right;
+  font-size: 3rem;
+}

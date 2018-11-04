@@ -10,7 +10,7 @@ class Header extends Component {
           Compass
         </div>
         <div className='header-button'>
-          <Button inverted className='button-text'>Explore</Button>
+          <Button inverted className='button-text'>Explore Trips</Button>
         </div>
       </div>
     )

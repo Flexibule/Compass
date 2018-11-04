@@ -1,14 +1,14 @@
 .Header {
   background-image: url('../assets/hawaii.jpg');
   background-size: cover;
-  height: 60vh;
+  height: 80vh;
   padding: 20em
 }
 
 .header-text {
   color: rgba(255, 255, 255, 0.85);
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 8rem;
 }
 
@@ -18,6 +18,6 @@
 
 .button-text {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 1.5rem !important;
+  font-size: 1.8rem !important;
   font-weight: bold !important;
 }
