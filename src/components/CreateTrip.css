@@ -4,6 +4,19 @@
   margin-bottom: 2em;
 }
 
+.center {
+  text-align: center;
+}
+
+.small-margin {
+  margin-top: 1em;
+}
+
+.create-button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1.2rem !important;
+}
+
 @media only screen and (max-width: 600px) {
   .CreateTrip {
     display: none;

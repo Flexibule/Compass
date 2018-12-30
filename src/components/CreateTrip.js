@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Card } from 'semantic-ui-react'
+import { Card, Button, Checkbox, Form } from 'semantic-ui-react'
+import {Grid, Row, Col} from 'react-bootstrap'
 import './CreateTrip.css'
 
 class CreateTrip extends Component {
@@ -8,11 +9,37 @@ class CreateTrip extends Component {
       <div className="CreateTrip">
          <Card fluid>
           <Card.Content>
-            <Card.Header>Matthew</Card.Header>
-            <Card.Meta>
-              <span className='date'>Joined in 2015</span>
-            </Card.Meta>
-            <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
+            <Card.Header className='center'>Create A Trip</Card.Header>
+            <Card.Description>
+                <Grid fluid>
+                  <Row>
+                    <Col md={4}>
+                      <Form>
+                          <Form.Field>
+                              <input placeholder='Trip Name' />
+                          </Form.Field>
+                        </Form>
+                    </Col>
+                    <Col md={4}>
+                      <Form>
+                        <Form.Field>
+                            <input placeholder='Location' />
+                        </Form.Field>
+                      </Form>
+                    </Col>
+                    <Col md={4}>
+                      <Form>
+                        <Form.Field>
+                            <input placeholder='Dates' />
+                        </Form.Field>
+                      </Form>
+                    </Col>
+                  </Row>
+                </Grid>
+                <div className='center small-margin'>
+                  <Button color='blue' className='create-button'>Create</Button>
+                </div>
+            </Card.Description>
           </Card.Content>
         </Card>
       </div>

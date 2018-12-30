@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Grid, Row, Col, Image} from 'react-bootstrap'
+import {Grid, Row, Col} from 'react-bootstrap'
 import './Home.css'
 
 import Header from '../components/Header'
