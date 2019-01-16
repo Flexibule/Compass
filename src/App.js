@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import  Home from './containers/Home'
+import Home from './containers/Home'
+import Landing from './containers/Landing'
 
 import {
   BrowserRouter as Router,
@@ -14,7 +15,8 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' component={Landing} />
+            <Route path='/home' component={Home}/>
           </div>
         </Router>
       </div>
